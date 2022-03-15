@@ -1,0 +1,469 @@
+.index {
+  width: 100%;
+  height: 100%;
+  background: url("../img/Group.png") no-repeat;
+
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+/* 公共头部 */
+.header {
+  width: 100%;
+  height: 100%;
+}
+
+.header_top {
+  padding: 0 160px;
+  height: 70px;
+  border-bottom: 1px solid #888e93;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+}
+.title h3 {
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 62px;
+}
+.look {
+  width: 163px;
+  height: 56px;
+  line-height: 56px;
+  background: linear-gradient(to left top, #4b82fe, #0250fe);
+  text-align: center;
+  color: #fff;
+  border-top-left-radius: 27px;
+  border-bottom-right-radius: 27px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 160px;
+  top: 50%;
+  color: red;
+  transform: translateY(-50%);
+}
+.slide .num {
+  margin: 20px 0;
+  color: #fff;
+  font-weight: bold;
+}
+.currentImg {
+  font-size: 30px;
+}
+.order {
+  font-size: 20px;
+  opacity: 0.6;
+}
+.slide .top,
+.slide .bottom {
+  cursor: pointer;
+  opacity: 0.2;
+}
+.slide .top:hover,
+.slide .bottom:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.slide a {
+  display: block;
+  width: 20px;
+  height: 73px;
+}
+.top-arrow {
+  background: url("../img/topArrow.png");
+}
+.bottom_arrow {
+  background: url("../img/bottomArrow.png");
+}
+
+.company_profile {
+  width: 100%;
+  height: 786px;
+  background: url("../img/Group\ 74.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.company_profile_content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+.current_content {
+  display: flex;
+  position: absolute;
+  left: 160px;
+  top: 100px;
+}
+.current_content span,
+.business_scope span {
+  height: 7px;
+  background-color: #0250fe;
+  border-radius: 10px;
+}
+.current_content span:first-child {
+  width: 30px;
+  margin-right: 7px;
+}
+.current_content span:last-child {
+  width: 134px;
+}
+.company_profile_content .content {
+  margin-top: 50px;
+  width: 100%;
+}
+.company_profile_title {
+  font-size: 20px;
+  width: 144px;
+  margin-bottom: 61px;
+  color: #333333;
+}
+.company_profile_describe {
+  width: 565px;
+  height: 154px;
+  line-height: 25px;
+  color: #888888;
+}
+
+.company_profile_img {
+  position: absolute;
+  top: 100px;
+  right: 160px;
+  width: 610px;
+  height: 511px;
+}
+
+.company_profile_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.company_profile_more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 160px;
+  bottom: 100px;
+  width: 990px;
+  height: 229px;
+  border-radius: 20px;
+  background-color: #fafbff;
+  box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.15);
+}
+
+.company_profile_more ul {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+.company_profile_more ul li {
+  position: relative;
+  width: 25%;
+}
+
+.company_profile_more ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 1px;
+  height: 70px;
+  background-color: #cbcbcb;
+}
+
+.company_profile_content
+  .content
+  .company_profile_more
+  .company_profile_more_icon {
+  margin-bottom: 24px;
+}
+
+.company_profile_more img {
+  width: 54px;
+  height: 54px;
+}
+
+/* 业务范围 */
+.business_scope {
+  width: 100%;
+  height: 679px;
+  background-color: #ffffff;
+}
+
+.look_all {
+  display: block;
+}
+
+/* 核心业务 */
+.core_business {
+  width: 100%;
+  height: 679px;
+  background: url("../img/Rectangle\ 1357.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.core_business_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 89px;
+}
+.core_business_title h3 {
+  font-size: 36px;
+  color: #333333;
+  margin-bottom: 17px;
+}
+
+.core_business_title p {
+  font-size: 16px;
+  color: #888888;
+  margin-bottom: 49px;
+}
+.business_box {
+  display: flex;
+}
+.business_box li {
+  position: relative;
+  width: 499px;
+  height: 336px;
+  background-color: blue;
+  border-radius: 10px;
+  border-radius: 10px;
+}
+.business_box li:not(:last-child) {
+  margin-right: 50px;
+}
+.business_box li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: url("../img//Rectangle\ 1359.png") no-repeat center / auto;
+}
+.business_box li span {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 22px;
+}
+
+/* 服务支持 */
+.service_support {
+  position: relative;
+
+  width: 100%;
+  height: 725px;
+  background-color: #fff;
+}
+
+.support_box {
+  display: flex;
+  justify-content: center;
+}
+
+.support_box li {
+  position: relative;
+  width: 100%;
+  height: 167px;
+  border-radius: 10px;
+  border: 1px dashed #0250fe;
+}
+.support_box li:not(:last-child) {
+  margin-right: 34px;
+}
+.support_box li:first-child {
+  display: flex;
+  height: 372px;
+  color: #fff;
+  background: linear-gradient(#0753fe, #3975fc);
+  z-index: 10;
+}
+.support_box li:first-child span {
+  color: #fff;
+}
+.support_box li:first-child i {
+  background: url("../img/Group\ 2.png") no-repeat;
+}
+.support_box li:first-child p {
+  padding: 0 28px;
+  line-height: 28px;
+  margin: 21px 0;
+}
+.support_box li:first-child a {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #0250fe;
+  font-size: 28px;
+}
+.support_content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.support_content i {
+  width: 46px;
+  height: 39px;
+  background: url("../img/Vector\(4\).png") no-repeat;
+}
+.support_content span {
+  font-size: 20px;
+  color: #0250fe;
+  margin: 14px 0 0 0;
+}
+.support_content .line {
+  width: 26px;
+  height: 2px;
+  opacity: 1;
+  background-color: #97b7ff;
+}
+
+.cooperation_img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  margin-top: 15px;
+}
+.cooperation_img img {
+  width: 100%;
+  height: auto;
+}
+
+/* 成功案例 */
+
+.success_case {
+  width: 100%;
+  height: 831px;
+  background-color: #ffffff;
+}
+
+.success_case .core_business_title h3 {
+  margin-bottom: 27px;
+}
+.success_case .core_business_title p {
+  margin-bottom: 36px;
+}
+
+.success_case_list ul {
+  display: flex;
+}
+.success_case_list ul li {
+  position: relative;
+  width: 100%;
+  height: 270px;
+  text-align: center;
+}
+.success_case_list ul li:not(:last-child) {
+  margin-right: 53px;
+}
+
+.success_case_list ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/Rectangle\ 20.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.success_case .success_case_list ul li:nth-child(2) a {
+  background: url("../img/Rectangle\ 21.png") no-repeat;
+  background-size: 100% 100%;
+}
+.logistics_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.logistics_info .logistics_info_line {
+  width: 2px;
+  height: 27px;
+  background-color: #0250fe;
+  margin-bottom: 15px;
+}
+.logistics_info_mes {
+  display: flex;
+  line-height: 70px;
+  color: #0250fe;
+}
+.logistics_info_mes .info {
+  /* display: inline-block; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  position: relative;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 57px;
+  background-color: #ebf2ff;
+  margin: 0 39px;
+  transform: scale(0.78);
+}
+.logistics_info_mes .info i {
+  position: absolute;
+  left: 50%;
+  top: -3px;
+  transform: translateX(-50%);
+}
+.logistics_info_mes .info span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+.success_case_text {
+  font-size: 20px;
+  color: #333333;
+  margin-top: 18px;
+  font-weight: 400;
+}
+.success_case_logistics {
+  position: absolute;
+  left: 0;
+  bottom: -134px;
+  height: 134px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.1);
+}
+.success_case_logistics h3 {
+  padding-top: 21px;
+}
+.success_case_logistics p {
+  font-size: 16px;
+  padding: 9px 20px 18px;
+  color: #666666;
+}
