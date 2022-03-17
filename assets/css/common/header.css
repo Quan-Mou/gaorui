@@ -1,3 +1,9 @@
+.header_top {
+  padding: 0 160px;
+  height: 70px;
+  border-bottom: 1px solid #888e93;
+}
+
 .heander_content {
   display: flex;
   justify-content: space-between;
@@ -8,7 +14,8 @@
 
 .nav_list {
   font-size: 18px;
-  /* color: rgba(0, 0, 0, 0.9); */
+}
+.nav_list a {
   color: #fff;
 }
 .nav_list ul {

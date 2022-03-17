@@ -13,14 +13,10 @@
   height: 100%;
 }
 
-.header_top {
-  padding: 0 160px;
-  height: 70px;
-  border-bottom: 1px solid #888e93;
-}
-
 .title {
-  position: relative;
+  /* position: absolute; */
+  /* left: 0; */
+  /* top: 0; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,6 +30,7 @@
   margin-bottom: 62px;
 }
 .look {
+  display: inline-block;
   width: 163px;
   height: 56px;
   line-height: 56px;
@@ -247,7 +244,6 @@
   position: relative;
   width: 499px;
   height: 336px;
-  background-color: blue;
   border-radius: 10px;
   border-radius: 10px;
 }
@@ -368,7 +364,7 @@
 .success_case {
   width: 100%;
   height: 831px;
-  background-color: #ffffff;
+  background-color: #fafbff;
 }
 
 .success_case .core_business_title h3 {
@@ -417,6 +413,7 @@
 }
 .logistics_info_mes {
   display: flex;
+  align-items: center;
   line-height: 70px;
   color: #0250fe;
 }
@@ -458,12 +455,154 @@
   height: 134px;
   background: #ffffff;
   box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.1);
+  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 11px;
 }
 .success_case_logistics h3 {
   padding-top: 21px;
+  color: #333333;
 }
 .success_case_logistics p {
   font-size: 16px;
   padding: 9px 20px 18px;
   color: #666666;
 }
+
+.logistics_info_mes .logistics_left {
+  width: 20px;
+  height: 20px;
+  background: url("../img/2.png") no-repeat;
+}
+
+.logistics_info_mes .logistics_right {
+  width: 21px;
+  height: 20px;
+  background: url("../img/3.png") no-repeat;
+}
+
+/* 新闻资讯 */
+.news_info {
+  background-color: #fff;
+}
+.news_head {
+  margin-top: 95px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+.news_head .news_title h3 {
+  margin-bottom: 27px;
+  font-size: 35px;
+}
+.news_head .news_title p {
+  color: #888888;
+}
+
+.news_lable ul {
+  display: flex;
+  margin-top: 20px;
+}
+.news_lable ul li {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 45px;
+  border-radius: 50px;
+  border: 1px solid #c4c4c4;
+  color: #999999;
+}
+.news_lable ul li:not(:last-child) {
+  margin-right: 15px;
+}
+.news_lable ul li:first-child {
+  background: linear-gradient(163deg, #175ffe 0%, #98b8ff 100%);
+  color: #fff;
+}
+.news_body {
+  position: relative;
+}
+.news_body ul {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.news_body ul li {
+  position: relative;
+  /* background-color: red; */
+}
+/* .news_body ul li:nth-child(1) {
+  background: url("../img/Rectangle\ 42.png") no-repeat;
+  flex: 1;
+}
+.news_body ul li:nth-child(2) {
+  background: url("../img/Group\ 84.png") no-repeat;
+  width: 80vw;
+}
+.news_body ul li:nth-child(3) {
+  background: url("../img/Rectangle\ 43.png") no-repeat;
+  flex: 1;
+} */
+.news_body ul li img {
+  width: 100%;
+  height: 100%;
+}
+.active {
+  /* width: 60vh; */
+  margin: 0 45px;
+}
+
+.news_body_info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.news_body_info .news_time {
+  margin: 11px 0;
+}
+.desc {
+  margin-bottom: 29px;
+}
+
+.prev {
+  position: absolute;
+  top: 29%;
+  left: 16%;
+  transform: translateY(-50%);
+}
+.next {
+  position: absolute;
+  top: 29%;
+  right: 16%;
+  transform: translateY(-50%);
+}
+
+.img_indexes span {
+  margin: 0 10px;
+}
+.img_indexes {
+  text-align: center;
+  margin-top: 10px;
+}
+.img_indexes span:first-child ::after {
+  content: "12";
+}
+
+.clinet {
+  margin-top: 96px;
+  margin-bottom: 74px;
+  text-align: center;
+}
+.clinet h3 {
+  margin-bottom: 33px;
+}
+.clinet ul li {
+  border: 1px dashed #a3a3a3;
+}
+.clinet ul li:not(:last-child) {
+  margin-right: 38px;
+}
+
+/* demo */

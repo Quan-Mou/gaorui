@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我们</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/common/header.css">
+  <link rel="stylesheet" href="./about.css">
+
+</head>
+
+<body>
+  <div class="about_header">
+    <div class="header_top">
+      <div class="heander_content ">
+        <div class="logo">
+          <img src="../../assets/img/about_logo.png" alt="">
+        </div>
+        <div class="nav_list">
+          <ul>
+            <li><a href="../../index.html">首页</a></li>
+            <li><a href="../pages/about/about.html" target="_blank">关于我们</a></li>
+            <li><a href="">产品中心</a></li>
+            <li><a href="">成功案例</a></li>
+            <li><a href="">新闻中心</a></li>
+            <li><a href="">技术支持</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 关于我们-大图 -->
+  <div class="about_img">
+    <img src="../../assets/img/about_img.png" alt="">
+    <div class="about_text">
+      <h3>关于我们</h3>
+      <p>ABOUT US</p>
+    </div>
+  </div>
+
+  <!-- 公司信息导航 -->
+  <div class="company_info">
+    <div class="company_nav w">
+      <ul class="company_info_list">
+        <li><a href="javascript:" class="company_info_list_active">公司介绍</a></li>
+        <li><a href="javascript:">企业文化</a></li>
+        <li><a href="javascript:">公司团队</a></li>
+        <li><a href="javascript:">联系我们</a></li>
+      </ul>
+      <div class="current_position"></div>
+      <div class="back_home">
+        <a href="../../index.html">
+          <i><img src="../../assets/img/home.png" alt=""></i>
+          <span>回到首页</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    let company_info_list = document.querySelectorAll(".company_info_list li")
+    let company_info_list_a = document.querySelectorAll(".company_info_list li a")
+    let current_position = document.querySelector(".current_position");
+    let current_content_size = 224;
+    for (let i = 0; i < company_info_list.length; i++) {
+      company_info_list[i].addEventListener("click", function () {
+        for (let i = 0; i < company_info_list.length; i++) {
+          company_info_list[i].firstChild.className = "";
+        }
+        this.firstChild.classList.add("company_info_list_active")
+        switch (i) {
+          case 0:
+            current_position.style.width = current_content_size + "px";
+            break;
+          case 1:
+            current_position.style.width = current_content_size + company_info_list[1].clientWidth + "px"
+            break;
+          case 2:
+            current_position.style.width = current_content_size + company_info_list[1].clientWidth + company_info_list[2].clientWidth + "px"
+            break;
+          case 3:
+            current_position.style.width = current_content_size + company_info_list[1].clientWidth + company_info_list[2].clientWidth + company_info_list[3].clientWidth + "px"
+            break;
+          default:
+        }
+      });
+    }
+  </script>
+
+  <!-- 公司介绍 -->
+  <div class="company_introduce w">
+    <div class="company_introduce_left">
+      <h3>上海锆瑞技术设备有限公司</h3>
+      <p>
+        上海锆瑞技术设备有限公司,是中国物联网产业的优秀企业，是卓越的条形码及RFID产品和解决方案供应商。专注于为企业提供条形码和RFID信息化平台软件、顾问服务、技术支持、条形码和RFID硬件集成等全方位技术服务。随着多年的发展，逐步形成了一系列具有独立知识产权的软硬件系统,包括:MES制造执行系统软件平台、MTS生产追溯系统软件平台、WMS条码仓库管理系统软件平台,标签打印系统，条形码管理系统，RFID识别管理系统等。为了更好地服务于客户，公司在大量实际工程项目经验的基础上，同时研发生产了Gaorui-tech2000、
+        Gaorui-tech8000等无线数据采集系统。目前，上海错瑞的软硬件系统广泛应用于仓储、生产线、物流、化工,光伏，电子，机械加工，电力、连锁、医疗、教育、安防等十余个行业。</p>
+      <img src="../../assets/img/10.png" alt="">
+    </div>
+    <dvi class="company_introduce_right">
+      <h3>公司介绍</h3>
+      <div class="company_introduce_right_line">——</div>
+      <div class="company_introduce_right_img">
+        <img src="../../assets//img/Rectangle 58.png" alt="">
+      </div>
+    </dvi>
+  </div>
+
+  <!-- 企业文化 -->
+  <div class="enterprise_culture w">
+    <div class="enterprise_culture_header">
+      <h3>企业文化</h3>
+      <p>「 引领商业进步 共创美好生活 」</p>
+    </div>
+    <div class="enterprise_culture_body">
+      <ul>
+        <li>
+          <div class="enterprise_culture_body_icon"><img src="../../assets/img/about-Frame.png" alt=""></div>
+          <h3>愿景</h3>
+          <div class="enterprise_culture_body_line">-</div>
+          <p>成为大众信赖和喜爱的一流企业</p>
+        </li>
+        <li>
+          <div class="enterprise_culture_body_icon"><img src="../../assets/img/about-Vector.png" alt=""></div>
+          <!-- <h3>愿景</h3> -->
+          <!-- <div class="enterprise_culture_body_line">-</div> -->
+          <p>互助友爱，齐心协力 彼此欣赏，信任包容,换位思考，主动补位 同甘共苦，荣辱与共</p>
+        </li>
+        <li>
+          <div class="enterprise_culture_body_icon"><img src="../../assets/img/about-Frame.png" alt=""></div>
+          <h3>愿景</h3>
+          <div class="enterprise_culture_body_line">-</div>
+          <p>成为大众信赖和喜爱的一流企业</p>
+        </li>
+        <li>
+          <div class="enterprise_culture_body_icon"><img src="../../assets/img/about-Frame.png" alt=""></div>
+          <h3>愿景</h3>
+          <div class="enterprise_culture_body_line">-</div>
+          <p>成为大众信赖和喜爱的一流企业</p>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- 公司团队&联系我们 -->
+  <div class="team&contact_us">
+    <div class="team">1</div>
+    <div class="contact_us">2</div>
+
+  </div>
+
+
+</body>
+
+</html>
