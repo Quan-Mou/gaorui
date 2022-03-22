@@ -1,0 +1,6 @@
+/* 大屏 */
+@media screen and (max-width: 1200px) {
+  .nav_list ul li:not(:last-child) {
+    margin-right: 20px;
+  }
+}

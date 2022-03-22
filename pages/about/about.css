@@ -28,68 +28,6 @@
   font-size: 28px;
 }
 
-.company_nav {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-
-.company_info_list {
-  display: flex;
-}
-
-.company_info_list li {
-  padding: 20px 0;
-}
-
-.company_info_list li:not(:first-child)::before {
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 10px;
-  background-color: #999999;
-  margin: 0 30px;
-}
-
-.company_info_list .company_info_list_active {
-  color: #0250fe;
-}
-
-.current_position {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 224px;
-  height: 2px;
-  background-color: blue;
-  transition: all 0.2s;
-}
-
-.company_info_list li a {
-  color: #333333;
-}
-.back_home {
-  padding: 20px 0;
-}
-.back_home a {
-  display: flex;
-  align-items: center;
-  color: #999999;
-}
-.back_home a i {
-  display: inline-block;
-  width: 19px;
-  height: 19px;
-}
-.back_home a i img {
-  width: 100%;
-  height: 100%;
-}
-.back_home a span {
-  /* vertical-align: middle; */
-  margin-left: 13px;
-}
-
 /* 公司介绍 */
 .company_introduce {
   display: flex;
@@ -134,8 +72,8 @@
 /* 企业文化 */
 .enterprise_culture {
   background: url("../../assets/img/Group\ 86.png") no-repeat;
-
   background-size: 100% 100%;
+  padding-bottom: 136px;
 }
 
 .enterprise_culture_header {
@@ -183,6 +121,7 @@
 .enterprise_culture_body ul li:nth-child(2) {
   background-color: #fff;
   opacity: 1;
+  border-bottom: 10px solid hsl(221deg 99% 50%);
 }
 .enterprise_culture_body ul li:nth-child(2) .enterprise_culture_body_icon {
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.05);
@@ -206,4 +145,69 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* 公司团队&联系我们  */
+.team_contact_us {
+  padding-bottom: 100px;
+}
+.team {
+  padding: 100px 140px 0 140px;
+}
+
+.team_title {
+  text-align: center;
+}
+.team_title_line {
+  width: 45px;
+  height: 2px;
+  background-color: #333333;
+  margin: 20px auto 64px auto;
+}
+.team ul {
+  display: flex;
+  margin-bottom: 107px;
+}
+.team ul li {
+  width: 25%;
+}
+.team ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.team ul li img {
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+}
+.contact .map {
+  width: 60%;
+}
+.contact .map img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.phone {
+  width: 40%;
+  padding: 57px;
+  background-color: #fafbff;
+}
+.phone_title h3 {
+  color: #333333;
+}
+.phone_title p {
+  margin-top: 13px;
+  margin-bottom: 37px;
+}
+.phone ul li i {
+  margin-right: 20px;
+}
+.phone ul li span {
+  color: #666666;
+}
+.phone ul li:not(:last-child) {
+  margin-bottom: 25px;
 }

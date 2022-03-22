@@ -1,0 +1,14 @@
+@media screen and (max-width: 992px) {
+  .nav_list ul {
+    display: none;
+  }
+  a.toggleMenu {
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+  a.toggleMenu img {
+    width: 100%;
+    height: 100%;
+  }
+}

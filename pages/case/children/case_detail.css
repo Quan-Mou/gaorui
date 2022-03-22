@@ -1,0 +1,36 @@
+.case_header a {
+  color: black;
+}
+.product_detaile_nav {
+  justify-content: flex-end;
+}
+
+.case_detail h3 {
+  margin-top: 76px;
+}
+
+.cae_detail_content {
+  border-bottom: 1px solid #999999;
+  border-top: 1px solid #999999;
+  padding: 20px 0;
+  margin: 15px 0;
+}
+
+.case_detail_img {
+  display: flex;
+  justify-content: center;
+  margin: 45px 0;
+}
+.case_detail_img img {
+  width: 500px;
+  height: auto;
+}
+.case_detail_img img:first-child {
+  margin-right: 65px;
+}
+
+.detail_nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}

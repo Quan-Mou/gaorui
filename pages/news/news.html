@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/common/header.css">
+  <link rel="stylesheet" href="../case/case.css">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/common/bg.css">
+  <link rel="stylesheet" href="../../assets/css/common/nav.css">
+  <link rel="stylesheet" href="../../assets/css/common/paging.css">
+  <link rel="stylesheet" href="../../assets/css/common/footer.css">
+  <link rel="stylesheet" href="./news.css">
+
+
+
+
+  <link rel="stylesheet" href="../../assets/css/common/index.css">
+  <link rel="stylesheet" href="../../assets/css/media/big.css">
+  <link rel="stylesheet" href="../../assets/css/media/mid.css">
+  <link rel="stylesheet" href="../../assets//css//media/sm.css">
+
+  <title>新闻中心</title>
+</head>
+
+<body>
+  <div class="case_header">
+    <div class="heander_content ">
+      <div class="logo">
+        <img src="../../assets/img/about_logo.png" alt="">
+      </div>
+      <div class="nav_list">
+        <ul>
+          <li><a href="">首页</a></li>
+          <li><a href="./pages/about/about.html" target="_blank">关于我们</a></li>
+          <li><a href="./pages/product/product.html" target="_blank">产品中心</a></li>
+          <li><a href="./pages/case/case.html" target="_blank">成功案例</a></li>
+          <li><a href="./pages/news/news.html" target="_blank">新闻中心</a></li>
+          <li><a href="" target="_blank">技术支持</a></li>
+        </ul>
+        <!-- 移动端导航 -->
+        <a href="#" class="toggleMenu">
+          <img src="../../assets/img/nav2.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 成功案例-大图 -->
+  <div class="about_img">
+    <img src="../../assets/img/news_img.png" alt="">
+    <div class="about_text">
+      <h3>新闻中心</h3>
+      <p>NEWS CENTER</p>
+    </div>
+  </div>
+
+  <!--可复用信息导航 -->
+  <div class="company_info">
+    <div class="company_nav w">
+      <ul class="company_info_list">
+        <li><a href="javascript:">条形码</a></li>
+        <li><a href="javascript:">标签</a></li>
+        <li><a href="javascript:">RFID</a></li>
+        <li><a href="javascript:">视觉</a></li>
+        <li><a href="javascript:">非标设备</a></li>
+      </ul>
+      <div class="current_position"></div>
+      <div class="back_home">
+        <a href="../../index.html">
+          <i><img src="../../assets/img/home.png" alt=""></i>
+          <span>回到首页</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    let company_info_list = document.querySelectorAll(".company_info_list li")
+    let company_info_list_a = document.querySelectorAll(".company_info_list li a")
+    let current_position = document.querySelector(".current_position");
+    let current_content_size = 224;
+    for (let i = 0; i < company_info_list.length; i++) {
+      company_info_list[i].addEventListener("click", function () {
+        for (let i = 0; i < company_info_list.length; i++) {
+          company_info_list[i].firstChild.className = "";
+        }
+        this.firstChild.classList.add("company_info_list_active")
+        switch (i) {
+          case 0:
+            current_position.style.width = current_content_size + "px";
+            break;
+          case 1:
+            current_position.style.width = current_content_size + company_info_list[1].clientWidth + "px"
+            break;
+          case 2:
+            current_position.style.width = current_content_size + company_info_list[1].clientWidth + company_info_list[2].clientWidth + "px"
+            break;
+          case 3:
+            current_position.style.width = current_content_size + company_info_list[1].clientWidth + company_info_list[2].clientWidth + company_info_list[3].clientWidth + "px"
+            break;
+          case 4:
+            current_position.style.width = current_content_size + company_info_list[1].clientWidth + company_info_list[2].clientWidth + company_info_list[3].clientWidth + company_info_list[4].clientWidth + "px"
+            break;
+          default:
+        }
+      });
+    }
+  </script>
+
+  <!-- 新闻列表 -->
+  <div class="news_list ">
+    <ul class="news_container w">
+      <li>
+        <img src="../../assets/img/news_list_1.png" alt="">
+        <div class="list_text">
+          <h3>3PL第三方物流</h3>
+          <p>上海锆瑞MES制造执行管理系统，是利用条码/RFID/PLC技术，将生产线的重要工序进行数据采集、分析、判断，实现数字化管控的条码生产管理系统。 实现产品生产的防错、精益生产和可视化管理，提高了生产效</p>
+          <div class="list_text_more">
+            <span>2021-12-29</span>
+            <span>了解更多</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="../../assets/img/news_list_1.png" alt="">
+        <div class="list_text">
+          <h3>3PL第三方物流</h3>
+          <p>上海锆瑞MES制造执行管理系统，是利用条码/RFID/PLC技术，将生产线的重要工序进行数据采集、分析、判断，实现数字化管控的条码生产管理系统。 实现产品生产的防错、精益生产和可视化管理，提高了生产效</p>
+          <div class="list_text_more">
+            <span>2021-12-29</span>
+            <span>了解更多</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="../../assets/img/news_list_1.png" alt="">
+        <div class="list_text">
+          <h3>3PL第三方物流</h3>
+          <p>上海锆瑞MES制造执行管理系统，是利用条码/RFID/PLC技术，将生产线的重要工序进行数据采集、分析、判断，实现数字化管控的条码生产管理系统。 实现产品生产的防错、精益生产和可视化管理，提高了生产效</p>
+          <div class="list_text_more">
+            <span>2021-12-29</span>
+            <span>了解更多</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="../../assets/img/news_list_1.png" alt="">
+        <div class="list_text">
+          <h3>3PL第三方物流</h3>
+          <p>上海锆瑞MES制造执行管理系统，是利用条码/RFID/PLC技术，将生产线的重要工序进行数据采集、分析、判断，实现数字化管控的条码生产管理系统。 实现产品生产的防错、精益生产和可视化管理，提高了生产效</p>
+          <div class="list_text_more">
+            <span>2021-12-29</span>
+            <span>了解更多</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</body>
+
+</html>
