@@ -574,14 +574,18 @@
 .prev {
   position: absolute;
   top: 29%;
-  left: 16%;
+  left: 15.5%;
   transform: translateY(-50%);
 }
 .next {
   position: absolute;
   top: 29%;
-  right: 16%;
+  right: 15.5%;
   transform: translateY(-50%);
+}
+.prev img,
+.next img {
+  cursor: pointer;
 }
 
 .img_indexes span {

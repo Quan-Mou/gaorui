@@ -6,7 +6,8 @@
   position: relative;
   width: 100%;
   height: 500px;
-  background: url("../../../assets/img/product_bg1.png") no-repeat center center;
+  background: url("../../../../assets/img/product_bg1.png") no-repeat center
+    center;
 }
 
 .product_img_text {
@@ -67,7 +68,7 @@
 .product_character {
   width: 100%;
   height: auto;
-  background: url("../../../assets/img/product_character.png") no-repeat;
+  background: url("../../../../assets/img/product_character.png") no-repeat;
   background-size: 100% 100%;
 }
 
@@ -171,12 +172,8 @@
 }
 
 /* 相关案例 */
-.related_case {
+/* .related_case {
   background: url("../../../assets/img/related_case_bg.png");
-}
-
-.related_case_title {
-  margin-top: 100px;
 }
 
 .related_case_line {
@@ -189,62 +186,4 @@
 
 .related_case_title h3 {
   padding-top: 100px;
-}
-
-/* 复用样式 */
-.case_list_box {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 100px;
-}
-.case_list_box li {
-  width: 31.5%;
-  margin-bottom: 57px;
-}
-.case_list_box li img {
-  max-width: 100%;
-  height: auto;
-}
-
-.case_list_box li:not(:nth-child(3n + 3)) {
-  margin-right: 2.5%;
-}
-
-.case_item_title {
-  position: relative;
-  top: -9px;
-  border-left: 1px solid #e4e4e4;
-  border-right: 1px solid #e4e4e4;
-  border-bottom: 1px solid #e4e4e4;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding: 21px 35px 0 38px;
-}
-.case_list_boxl li img {
-  margin: 0;
-  padding: 0;
-}
-
-.case_item_title h3 {
-  font-size: 18px;
-  color: #333333;
-}
-.case_item_title p {
-  font-size: 12px;
-  border-bottom: 1px solid #999999ed;
-}
-
-.case_more {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 13px;
-}
-.case_more a {
-  font-size: 12px;
-  color: #999999;
-}
-
-.related_case_box {
-  margin-top: 0;
-}
+} */
