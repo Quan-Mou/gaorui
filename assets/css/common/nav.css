@@ -30,7 +30,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 224px;
+  width: 0;
   height: 2px;
   background-color: blue;
   transition: all 0.2s;

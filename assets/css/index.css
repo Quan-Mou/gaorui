@@ -13,7 +13,7 @@
 }
 
 .title {
-  /* position: absolute; */
+  position: relative;
   /* left: 0; */
   /* top: 0; */
   display: flex;
@@ -87,11 +87,19 @@
   background: url("../img/bottomArrow.png");
 }
 
+/* 首页顶部轮播图 */
+.swiper {
+  position: asbolute;
+}
+
+.swiper-slide img {
+  height: 100%;
+}
+
 /* 公司介绍 */
 
 .company_profile {
   width: 100%;
-  height: 786px;
   background: url("../img/Group\ 74.png") no-repeat;
   background-size: 100% 100%;
 }
@@ -109,7 +117,7 @@
 .current_content {
   display: flex;
   position: absolute;
-  left: 160px;
+  /* left: 160px; */
   top: 100px;
 }
 .current_content span,
@@ -132,38 +140,38 @@
 .company_profile_title {
   font-size: 20px;
   width: 144px;
-  margin-bottom: 61px;
+  margin-bottom: 38px;
   color: #333333;
 }
 .company_profile_describe {
-  width: 565px;
-  height: 154px;
-  line-height: 25px;
+  margin-right: 600px;
   color: #888888;
+  margin-bottom: 59px;
 }
 
 .company_profile_img {
   position: absolute;
-  top: 100px;
-  right: 160px;
+  top: 158px;
+  right: 100px;
   width: 610px;
   height: 511px;
+  /* z-index: -10; */
 }
 
+.profile + div {
+  z-index: -10;
+}
 .company_profile_img img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  min-height: 100%;
 }
 
 .company_profile_more {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 160px;
-  bottom: 100px;
-  width: 990px;
-  height: 229px;
   border-radius: 20px;
   background-color: #fafbff;
   box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.15);
@@ -173,18 +181,20 @@
   display: flex;
   width: 100%;
   text-align: center;
+  padding: 35px 0;
 }
 
 .company_profile_more ul li {
   position: relative;
   width: 25%;
+  margin: 0 50px;
 }
 
 .company_profile_more ul li:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 15px;
-  right: 0;
+  right: -50px;
   width: 1px;
   height: 70px;
   background-color: #cbcbcb;
@@ -205,18 +215,23 @@
 /* 业务范围 */
 .business_scope {
   width: 100%;
-  height: 679px;
+  /* height: 679px; */
   background-color: #ffffff;
 }
-
+.business + div {
+  margin-bottom: 30px;
+}
 .look_all {
   display: block;
+}
+.business_scope .company_profile_img {
+  top: 20px;
 }
 
 /* 核心业务 */
 .core_business {
   width: 100%;
-  height: 679px;
+  /* height: 679px; */
   background: url("../img/Rectangle\ 1357.png") no-repeat;
   background-size: 100% 100%;
 }
@@ -243,9 +258,8 @@
 }
 .business_box li {
   position: relative;
-  width: 499px;
+  width: 33.333%;
   height: 336px;
-  border-radius: 10px;
   border-radius: 10px;
 }
 .business_box li:not(:last-child) {
@@ -255,22 +269,29 @@
   display: inline-block;
   width: 100%;
   height: 100%;
+
   border-radius: 10px;
   background: url("../img//Rectangle\ 1359.png") no-repeat center / auto;
+  background-size: 100% 100%;
 }
 .business_box li span {
   position: absolute;
   left: 50%;
-  bottom: 18px;
-  transform: translateX(-50%);
-  color: #fff;
+  bottom: 0;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
   font-size: 22px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateX(-50%);
+  border-radius: 10px;
 }
 
 /* 服务支持 */
 .service_support {
   position: relative;
-
   width: 100%;
   height: 725px;
   background-color: #fff;
@@ -293,7 +314,7 @@
 }
 .support_box li:first-child {
   display: flex;
-  height: 372px;
+  height: 340px;
   color: #fff;
   background: linear-gradient(#0753fe, #3975fc);
   z-index: 10;
@@ -306,26 +327,27 @@
 }
 .support_box li:first-child p {
   padding: 0 28px;
-  line-height: 28px;
   margin: 21px 0;
+  line-height: 28px;
+  color: #fff;
 }
 .support_box li:first-child a {
   width: 36px;
   height: 36px;
   line-height: 36px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: #fff;
   color: #0250fe;
   font-size: 28px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
 }
 .support_content {
-  width: 100%;
-  height: 100%;
+  display: flex;
   position: absolute;
   left: 0;
   bottom: 0;
-  display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -367,9 +389,9 @@
   height: 831px;
   background-color: #fafbff;
 }
-.success {
+/* .success {
   margin-top: 98px;
-}
+} */
 
 .success_case .core_business_title h3 {
   margin-bottom: 27px;
@@ -412,8 +434,8 @@
 .logistics_info .logistics_info_line {
   width: 2px;
   height: 27px;
-  background-color: #0250fe;
   margin-bottom: 15px;
+  background-color: #0250fe;
 }
 .logistics_info_mes {
   display: flex;
@@ -422,16 +444,13 @@
   color: #0250fe;
 }
 .logistics_info_mes .info {
-  /* display: inline-block; */
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   position: relative;
-  border-radius: 50%;
   width: 70px;
   height: 70px;
-  line-height: 57px;
-  background-color: #ebf2ff;
   margin: 0 39px;
+  line-height: 57px;
+  border-radius: 50%;
+  background-color: #ebf2ff;
   transform: scale(0.78);
 }
 .logistics_info_mes .info i {
@@ -467,9 +486,9 @@
   color: #333333;
 }
 .success_case_logistics p {
-  font-size: 16px;
   padding: 9px 20px 18px;
   color: #666666;
+  font-size: 16px;
 }
 
 .logistics_info_mes .logistics_left {
@@ -489,9 +508,9 @@
   background-color: #fff;
 }
 .news_head {
-  margin-top: 95px;
   display: flex;
   justify-content: space-between;
+  margin-top: 95px;
   margin-bottom: 56px;
 }
 .news_head .news_title h3 {
@@ -509,8 +528,8 @@
 .news_lable ul li {
   cursor: pointer;
   height: 40px;
-  line-height: 40px;
   padding: 0 45px;
+  line-height: 40px;
   border-radius: 50px;
   border: 1px solid #c4c4c4;
   color: #999999;
@@ -532,7 +551,6 @@
 }
 .news_body ul li {
   position: relative;
-  /* background-color: red; */
 }
 /* .news_body ul li:nth-child(1) {
   background: url("../img/Rectangle\ 42.png") no-repeat;

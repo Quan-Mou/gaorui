@@ -7,4 +7,25 @@
     width: 100%;
     margin: 0;
   }
+  .w {
+    padding: 0 30px;
+  }
+  /* html {} */
+}
+
+@media screen and (max-width: 670px) {
+  .core_business {
+    padding-bottom: 100px;
+  }
+  .business_box {
+    flex-wrap: wrap;
+  }
+  .business_box li {
+    width: 100%;
+  }
+
+  .business_box li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }

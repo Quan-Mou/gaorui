@@ -7,13 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="stylesheet" href="./assets/css/index.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-
-  <!-- <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"> -->
-  <link rel="stylesheet" href="./assets/css/common/header.css">
-
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" href="./assets/css/common/header.css">
   <link rel="stylesheet" href="./assets/css/common/footer.css">
   <link rel="stylesheet" href="./assets/css/common/index.css">
   <link rel="stylesheet" href="./assets/css/media/big.css">
@@ -26,11 +25,8 @@
 <body>
 
   <div class="index">
-    <!-- <div class="header"> -->
 
     <div class="index_header">
-      <!-- <iframe marginwidth=0 marginheight=0 width="100%" height=100% src="./common/header.html" frameborder="no"
-        scrolling="no"></iframe> -->
       <div class="header">
         <div class="heander_content ">
           <div class="logo">
@@ -52,9 +48,8 @@
           </div>
         </div>
       </div>
-
-
     </div>
+
 
 
     <div class="title ">
@@ -71,7 +66,6 @@
         </div>
       </div>
     </div>
-    <!-- </div> -->
   </div>
 
   <!-- 公司介绍 -->
@@ -83,17 +77,20 @@
         <span></span>
       </div>
       <div class="content">
-        <div class="company_profile_title">
-          <h3>公司介绍</h3>
+        <div class="company_left">
+          <div class="company_profile_title">
+            <h3>公司介绍</h3>
+          </div>
+          <div class="profile company_profile_describe ">
+            <p>上海锆瑞技术设备有限公司成立于2013年，是中国物联网产业的优秀企业，条形码
+              rfid产品和视觉检测技术为核心，为客户提供一站式智能化自动识别软硬件集成产品和制定生产各类印刷品标签。目前，上海锆瑞Gaorui-Tech产品广泛应用于物流仓储、电子电力，光伏，化工，服装，机械加工等行业。
+            </p>
+          </div>
+          <div class="company_profile_img">
+            <img src="./assets/img/Rectangle 58.png" alt="">
+          </div>
         </div>
-        <div class="company_profile_describe">
-          <p>上海锆瑞技术设备有限公司成立于2013年，是中国物联网产业的优秀企业，条形码
-            rfid产品和视觉检测技术为核心，为客户提供一站式智能化自动识别软硬件集成产品和制定生产各类印刷品标签。目前，上海锆瑞Gaorui-Tech产品广泛应用于物流仓储、电子电力，光伏，化工，服装，机械加工等行业。
-          </p>
-        </div>
-        <div class="company_profile_img">
-          <img src="./assets/img/Rectangle 58.png" alt="">
-        </div>
+
         <div class="company_profile_more">
           <ul>
             <li>
@@ -126,19 +123,22 @@
         <span></span>
       </div>
       <div class="content">
-        <div class="company_profile_title">
-          <h3>业务范围</h3>
-        </div>
-        <div class="company_profile_describe">
-          <p>上海锆瑞技术仓库管理软件，集成行业专业的实践业务模型，帮助企业解决在仓库作业过程中所面临的种种挑战
-          </p>
+        <div class="business_left">
+          <div class="company_profile_title">
+            <h3>业务范围</h3>
+          </div>
+          <div class="business company_profile_describe">
+            <p>上海锆瑞技术仓库管理软件，集成行业专业的实践业务模型，帮助企业解决在仓库作业过程中所面临的种种挑战
+            </p>
+          </div>
+          <div>
+            <a href="#" class="look look_all">查看全部</a>
+          </div>
         </div>
         <div class="company_profile_img">
           <img src="./assets/img/业务范围.png" alt="">
         </div>
-        <div>
-          <a href="#" class="look look_all">查看全部</a>
-        </div>
+
       </div>
     </div>
   </div>
@@ -430,14 +430,11 @@
   <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
-
-  </script>
 
 
 
 
-  <!-- <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
   <script>
     var mySwiper = new Swiper('.swiper', {
       direction: 'vertical', // 垂直切换选项
@@ -446,6 +443,7 @@
       // 如果需要分页器
       pagination: {
         el: '.swiper-pagination',
+        type: "fraction"
       },
 
       // 如果需要前进后退按钮
@@ -456,10 +454,10 @@
 
       // 如果需要滚动条
       scrollbar: {
-        el: '.swiper-scrollbar',
+        // el: '.swiper-scrollbar',
       },
     })        
-  </script> -->
+  </script>
 </body>
 
 
