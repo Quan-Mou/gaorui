@@ -11,6 +11,15 @@
     padding: 0 30px;
   }
   /* html {} */
+  .news_lable ul li {
+    padding: 0 22px;
+  }
+
+  .prev,
+  .next {
+    top: 19.5%;
+    transform: scale(0.9);
+  }
 }
 
 @media screen and (max-width: 670px) {
@@ -27,5 +36,61 @@
   .business_box li:not(:last-child) {
     margin-right: 0;
     margin-bottom: 15px;
+  }
+  .logistics_info_mes .info {
+    margin: 0 15px;
+  }
+  .prev,
+  .next {
+    top: 16.5%;
+    transform: scale(0.9);
+  }
+  .prev {
+    left: 16.5%;
+  }
+  .next {
+    right: 16.5%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .w {
+    padding: 0 11px;
+  }
+  .news_lable ul li {
+    padding: 0 5px;
+  }
+  .news_lable ul li:not(:last-child) {
+    margin-right: 3px;
+  }
+  .service_support {
+    height: 572px;
+  }
+  .support_list {
+    display: none;
+  }
+  .success_case_list ul li:not(:last-child) {
+    margin-right: 7px;
+  }
+  .success_case_logistics p {
+    padding: 9px 2px 2px;
+  }
+  .success_case_text {
+    font-size: 14px;
+  }
+  .logistics_info_mes .info {
+    margin: 0;
+  }
+
+  .prev,
+  .next {
+    top: 14.5%;
+    transform: scale(0.8);
+  }
+  .clinet ul {
+    flex-wrap: wrap;
+  }
+  .clinet ul li:not(:last-child) {
+    margin-right: 0;
   }
 }

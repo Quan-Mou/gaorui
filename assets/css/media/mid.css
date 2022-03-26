@@ -20,7 +20,9 @@
   .company_profile_describe {
     margin-right: 513px;
   }
-
+  .success_case_list ul li:not(:last-child) {
+    margin-right: 36px;
+  }
   .w {
     padding: 0 70px;
   }
@@ -49,6 +51,30 @@
   .support_box li:first-child span {
     margin: 0;
   }
+
+  .news_lable ul li {
+    padding: 0 39px;
+  }
+
+  .prev,
+  .next {
+    top: 26.5%;
+  }
+  .news_body_info .news_time {
+    margin: 3px 0;
+  }
+
+  .desc {
+    line-height: 22px;
+    font-size: 14px;
+  }
+
+  .news_body_info .look {
+    transform: scale(0.8);
+  }
+  .clinet.w {
+    padding: 0 10px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -72,7 +98,13 @@
   .business_box li:not(:last-child) {
     margin-right: 20px;
   }
-
+  .logistics_info_mes .info {
+    margin: 0 30px;
+  }
+  /* .prev,
+  .next {
+    left: 15.8%;
+  } */
   .w {
     padding: 0 50px;
   }

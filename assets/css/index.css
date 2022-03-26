@@ -405,7 +405,7 @@
 }
 .success_case_list ul li {
   position: relative;
-  width: 100%;
+  width: 33.333%;
   height: 270px;
   text-align: center;
 }
@@ -420,12 +420,23 @@
   background: url("../img/Rectangle\ 20.png") no-repeat;
   background-size: 100% 100%;
 }
+.success_case_img {
+  width: 100%;
+  height: 50%;
+}
+
+.success_case_list ul li img {
+  width: 100%;
+  height: 100%;
+}
 
 .success_case .success_case_list ul li:nth-child(2) a {
   background: url("../img/Rectangle\ 21.png") no-repeat;
   background-size: 100% 100%;
 }
 .logistics_info {
+  position: absolute;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -440,6 +451,7 @@
 .logistics_info_mes {
   display: flex;
   align-items: center;
+  justify-content: center;
   line-height: 70px;
   color: #0250fe;
 }
@@ -472,10 +484,11 @@
   font-weight: 400;
 }
 .success_case_logistics {
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  bottom: -134px;
-  height: 134px;
+  bottom: 0; */
+  width: 100%;
+  /* height: 134px; */
   background: #ffffff;
   box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.1);
   border-bottom-right-radius: 11px;
@@ -510,6 +523,7 @@
 .news_head {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 95px;
   margin-bottom: 56px;
 }
@@ -544,11 +558,13 @@
 .news_body {
   position: relative;
 }
-.news_body ul {
+.news_body ul,
+.clinet ul {
   display: flex;
   justify-content: space-around;
   overflow: hidden;
 }
+
 .news_body ul li {
   position: relative;
 }
@@ -574,12 +590,24 @@
 }
 
 .news_body_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
+  height: 100%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
+}
+
+.news_body_info .look {
+  width: auto;
+  height: auto;
+  padding: 0px 35px;
 }
 
 .news_body_info .news_time {
@@ -587,6 +615,7 @@
 }
 .desc {
   margin-bottom: 29px;
+  padding: 0 30px;
 }
 
 .prev {
@@ -615,6 +644,24 @@
 }
 .img_indexes span:first-child ::after {
   content: "12";
+}
+.img_indexes_active {
+  position: relative;
+  color: #0250fe;
+}
+.img_indexes_active::after {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 20px;
+  height: 2px;
+  margin-left: 11px;
+  background-color: #0250fe;
+  transform: translateY(-50%);
+}
+.img_indexes_active + span {
+  margin-left: 30px;
 }
 
 .clinet {
